@@ -4,7 +4,7 @@ export BASE_DIR=`readlink -f $THIS_SCRIPT_PATH`
 export PROJECT_NAME=`basename $BASE_DIR`
 
 
-export WORK_DIR="/work00/keitonlp/public/${PROJECT_NAME}"
+export WORK_DIR=""
 
 # if WORK_DIR is not set, then throw error
 if [ -z "$WORK_DIR" ]; then

@@ -24,5 +24,4 @@ docker run \
        --mount type=bind,source="${WORK_DIR}",target="/work" \
        --mount type=bind,source="${BASE_DIR}",target="${BASE_DIR}" \
        --mount type=bind,source="${DOCKER_SETTING_DIR}/.zshrc",target="${ZSH_CONFIG_PATH}" \
-       --mount type=bind,source="/work00",target="/work00" \
        $PROJECT_NAME

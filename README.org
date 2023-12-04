@@ -1,7 +1,6 @@
 * A Challenging Multimodal Video Summary: Simultaneously Extracting and Generating Keyframe-Caption Pairs from Video
-** 一時的な変更
-- .project_config.shのwork_dir
-- interactive.shでのwork00のマウント
+** Download dataset and pre-trained model
+Upcoming
 
 
 ** Basic Usage and samples
@@ -88,5 +87,5 @@ zsh ./scripts/test.sh ./configs/test_config.jsonnet 0 1 2 3
 #+END_SRC
 
 ** Upcoming
-- データセット・学習済みモデルの公開
-- 本タスクの評価スクリプトの公開
+- Release of datasets and pre-trained models
+- Release of evaluation scripts for this task

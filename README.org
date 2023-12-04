@@ -1,4 +1,6 @@
 * A Challenging Multimodal Video Summary: Simultaneously Extracting and Generating Keyframe-Caption Pairs from Video
+This repository contains the code for the paper "A Challenging Multimodal Video Summary: Simultaneously Extracting and Generating Keyframe-Caption Pairs from Video".
+
 ** Download dataset and pre-trained model
 Upcoming
 
@@ -73,6 +75,8 @@ zsh ./scripts/prepro.sh ./configs/prepro_config_instruct_blip_t5_few_shot.jsonne
 # Inference with 4 GPUs
 zsh ./scripts/test.sh ./configs/inference_normalized_balanced_seq_beam_8_instruct_blip_t5_few_shot_config.jsonnet 0 1 2 3
 #+END_SRC
+Results will be saved in `/work/experiment_results/anet_fine_tuning_flan_base_wide_seed_42/logs/reranking_result_${date}.json`.
+
 
 *** Inference without pretrained image captioning model (self)
 #+BEGIN_SRC sh
@@ -85,6 +89,7 @@ zsh ./scripts/prepro.sh ./configs/prepro_config_test.jsonnet
 # Inference with 4 GPUs
 zsh ./scripts/test.sh ./configs/test_config.jsonnet 0 1 2 3
 #+END_SRC
+Results will be saved in `/work/experiment_results/anet_fine_tuning_flan_base_wide_seed_42/logs/generation_result_${date}.json`.
 
 ** Upcoming
 - Release of datasets and pre-trained models

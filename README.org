@@ -36,7 +36,7 @@ zsh ./tools/interactive.sh
 #+BEGIN_SRC sh
 cd /work
 huggingface-cli download shirayukikun/multi-vidsum --local-dir . --local-dir-use-symlinks False  --repo-type dataset
-tar -xvf download.tar.gz --no-same-owner
+tar -xzvf download.tar.gz --no-same-owner
 #+END_SRC
 
 ** Coco pretrain
@@ -94,5 +94,5 @@ zsh ./scripts/test.sh ./configs/test_config.jsonnet 0 1 2 3
 Results will be saved in `/work/experiment_results/anet_fine_tuning_flan_base_wide_seed_42/logs/generation_result_${date}.json`.
 
 ** Evaluation
-See [[https://github.com/keitokudo/Multi-VidSum-Eval][
+See [[https://github.com/keitokudo/Multi-VidSum-Eval][repository for evaluation]].
 

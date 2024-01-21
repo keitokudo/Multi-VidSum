@@ -1,9 +1,5 @@
 * A Challenging Multimodal Video Summary: Simultaneously Extracting and Generating Keyframe-Caption Pairs from Video
-This repository contains the code for the paper "A Challenging Multimodal Video Summary: Simultaneously Extracting and Generating Keyframe-Caption Pairs from Video".
-
-** Download dataset and pre-trained model
-Upcoming
-
+This repository contains the code for the paper [[https://aclanthology.org/2023.emnlp-main.457/][A Challenging Multimodal Video Summary: Simultaneously Extracting and Generating Keyframe-Caption Pairs from Video]].
 
 ** Basic Usage and samples
 This repository assumes that you run the code with Docker.
@@ -36,6 +32,12 @@ zsh env_setup.sh
 zsh ./tools/interactive.sh
 #+END_SRC
 
+*** Download dataset and pre-trained model
+#+BEGIN_SRC sh
+cd /work
+huggingface-cli download shirayukikun/multi-vidsum --local-dir . --local-dir-use-symlinks False  --repo-type dataset
+tar -xvf download.tar.gz --no-same-owner
+#+END_SRC
 
 ** Coco pretrain
 #+BEGIN_SRC sh
@@ -91,6 +93,6 @@ zsh ./scripts/test.sh ./configs/test_config.jsonnet 0 1 2 3
 #+END_SRC
 Results will be saved in `/work/experiment_results/anet_fine_tuning_flan_base_wide_seed_42/logs/generation_result_${date}.json`.
 
-** Upcoming
-- Release of datasets and pre-trained models
-- Release of evaluation scripts for this task
+** Evaluation
+See [[https://github.com/keitokudo/Multi-VidSum-Eval][
+

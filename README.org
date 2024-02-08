@@ -95,5 +95,5 @@ zsh ./scripts/test.sh ./configs/test_config.jsonnet 0 1 2 3
 Results will be saved in `/work/experiment_results/anet_fine_tuning_flan_base_wide_seed_42/logs/generation_result_${date}.json`.
 
 ** Evaluation
-See [[https://github.com/keitokudo/Multi-VidSum-Eval][repository for evaluation]].
+See [[https://github.com/cl-tohoku/Multi-VidSum-Eval][repository for evaluation]]
 

@@ -35,9 +35,10 @@ zsh ./tools/interactive.sh
 *** Download dataset and pre-trained model
 #+BEGIN_SRC sh
 cd /work
-huggingface-cli download shirayukikun/multi-vidsum --local-dir . --local-dir-use-symlinks False  --repo-type dataset
+huggingface-cli download tohoku-nlp/multi-vidsum --local-dir . --local-dir-use-symlinks False  --repo-type dataset
 tar -xzvf download.tar.gz --no-same-owner
 #+END_SRC
+
 
 ** Coco pretrain
 #+BEGIN_SRC sh
